@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@300;400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+    color: #000;
+}
+
+p{
+    color: #fff;
+}
+
+nav {
+    background: #000;
+    border-bottom: 3px solid #34CB94;
+    opacity: 0.8;
+
+}
+
+#navbarNav {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.nav-item{
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+a.nav-link, a.nav-link:hover, a.nav-link:focus {
+    color: #fff;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus{
+    border: 0;
+    outline: none;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/*Banner area */
+
+#banner{
+    background:url('img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+}
+
+.banner h1 {
+    color: #fff;
+    padding-top: 12%;
+    margin: 80px 0 50px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.banner img{
+    max-height: 500px;
+}
+
+.banner a,
+.banner a:hover{
+    padding: 12px;
+    width: 150px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+a.express-btn,
+a.express-btn:hover{
+    background-color: #fff;
+    color: #000;
+    margin-right: 5px;
+}
+
+/*services area*/
+
+.services{
+    margin: 75px 0;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.subtitle{
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 15px;
+    color: #808080;
+}
+
+.service-box{
+    text-align: center;
+    padding: 35px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.service-box p{
+    color: #808080;
+}
+
+.service-box .fas{
+    color: #34CB94;
+}
+
+.service-box:hover{
+    background-color: #34CB94;
+    border-radius: 5px;
+    box-shadow: 0 15px 15px 2px rgb(213, 213, 213, 0.5 );
+}
+
+.service-box:hover p, .service-box:hover .fas{
+    color: #fff;
+}
+
+/* feature and explore area */
+
+.feature, .explore{
+    margin: 100px 0;
+
+}
+
+.feature img,
+.explore img {
+    border-radius: 5px;
+}
+
+.feature h2,
+.explore h2{
+    margin-top: 20px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.feature p,
+.explore p{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    color: #808080;
+    line-height: 30px;
+}
+
+.feature a,
+.explore a{
+    width: 170px;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    display: block;
+    background-color: #34CB94;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 9px 9px 1px rgb(204, 204, 204, 0.5);
+
+}
+
+/*review section*/
+
+.review {
+    margin: 100px 0;
+
+}
+
+.carousel-item img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.carousel-item{
+    text-align: center;
+    height: 430px;
+}
+
+.carousel-caption{
+    z-index: -1 !important;
+    box-shadow: 0 0 15px 1px rgba(166, 166, 223, 0.5);
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.carousel-caption h6{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+.carousel-caption small{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #000;
+    display: block;
+}
+
+.carousel-caption p{
+    text-align: center;
+    padding: 0 50px;
+    font-size: 15px;
+    color: #808080;
+}
+
+.carousel-indicators button{
+    background-color: #34CB94 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: #34CB94;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+/* footer area */
+
+.footer{
+    background-color: #34CB94;
+    padding-top: 5px;
+}
+
+.footer h2{
+    color: #fff;
+    font-weight: 600;
+    margin: 70px 0;
+    text-align: center;
+}
+
+.footer form{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer input{
+    width: 60%;
+    background: transparent;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    padding: 10px ;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 15px;
+}
+
+.footer button{
+    padding: 6px;
+    width: 180px;
+    margin: auto;
+    color: #fff;
+    border: 1px solid #fff;
+    font-smooth: 20px;
+    background: transparent;
+}
+
+.footer small{
+    font-size: 15px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* drugi video minuta 9:04 */
